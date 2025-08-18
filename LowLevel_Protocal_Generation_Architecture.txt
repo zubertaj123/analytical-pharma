@@ -1,0 +1,216 @@
+direction right
+colorMode pastel
+styleMode shadow
+typeface clean
+
+// =========================================
+// Protocol Development Architecture (Azure AI, GPT-5)
+// =========================================
+title Protocol Development Architecture (Azure AI, GPT-5)
+
+// 1. User Interface Layer
+User Interface [label: "1. User Interface Layer", icon: monitor, color: blue] {
+  Web Application [icon: react, label: "React + Azure App Service"]
+  Product Input [icon: edit, label: "Product Specs Input"]
+  Method Requirements [icon: file-text, label: "HPLC/GC/Dissolution"]
+  Development Phase [icon: filter, label: "Early/Late Phase Selection"]
+  Excel Data Parser [icon: file-spreadsheet, label: "Flexible Data Ingestion"]
+  Scientist Review [icon: user-check, label: "HITL Review Interface"]
+}
+
+// 2. API Gateway & Orchestration
+API Gateway & Orchestration [label: "2. API Gateway & Orchestration", icon: azure-api-management, color: red] {
+  Azure API Management [icon: azure-api-management, label: "Authentication & Rate Limiting"]
+  Master Orchestrator [icon: aws-backint-agent, label: "Master Orchestrator"]
+  Workflow Engine [icon: calendar, label: "Multi-Step Agentic Protocol Workflow"]
+  Agent Coordinator [icon: users, label: "Dynamic Agent Routing"]
+}
+
+// 3. 15-Step Agentic Workflow Engine
+Agentic Workflow Engine [label: "3. Multi-Step Agentic Protocal Workflow Engine", icon: workflow] {
+  Phase 1 Foundation [icon: settings, label: "Steps 1-3: Data Foundation"] {
+    Product Analysis [icon: package, label: "Parse Product Specifications"]
+    Range Calculation [icon: calculator, label: "Multi-strength Optimization"]
+    Data Validation [icon: check-circle, label: "Input Validation"]
+  }
+  Phase 2 Classification [icon: filter, label: "Steps 4-6: Intelligent Routing"] {
+    Phase Classification [icon: layers, label: "Early vs Late Phase"]
+    Path Selection [icon: shuffle, label: "Novel vs Existing Method"]
+    Method Planning [icon: map, label: "Validation Strategy"]
+  }
+  Phase 3 Intelligence [icon: brain, label: "Steps 7-9: Experience Application"] {
+    Experience Analysis [icon: activity, label: "Historical Intelligence"]
+    Pattern Recognition [icon: trending-up, label: "Success Patterns"]
+    Optimization Logic [icon: target, label: "Method Optimization"]
+  }
+  Phase 4 Generation [icon: file-plus, label: "Steps 10-12: Document Creation"] {
+    Parameter Definition [icon: clipboard, label: "ICH Q2R2 Parameters"]
+    Compliance Check [icon: shield-check, label: "Regulatory Validation"]
+    Protocol Generation [icon: file-text, label: "Complete Document"]
+  }
+  Phase 5 Learning [icon: user-cog, label: "Steps 13-15: HITL Integration"] {
+    Review Capture [icon: edit-3, label: "Scientist Feedback"]
+    Pattern Learning [icon: brain, label: "Knowledge Update"]
+    Quality Optimization [icon: thumbs-up, label: "Continuous Improvement"]
+  }
+}
+
+// 4. Specialized AI Agents
+Specialized AI Agents [label: "4. Specialized AI Agents", icon: bot, color: green] {
+  AzureOpenAI [icon: azure-ai, label: "Azure Foundry"]
+  Foundation Agents [icon: settings, label: "Phase 1 Agents"] {
+    Product Specification Agent [icon: openai, label: "GPT-5 PRIMARY DRIVER"]
+    Range Calculation Engine [icon: calculator, label: "GPT-4o Mathematical Logic"]
+    Data Processing Agent [icon: database, label: "GPT-4o      Input Processing"]
+  }
+  Intelligence Agents [icon: brain, label: "Phase 2-3 Agents"] {
+    Phase Classification Agent [icon: filter, label: "GPT-4o Early/Late Logic"]
+    Path Selection Agent [icon: shuffle, label: "GPT-4o  Method Routing"]
+    Experience Intelligence Agent [icon: activity, label: "GPT-4o Institutional Knowledge"]
+    Literature Research Agent [icon: book-open, label: "GPT-4o  Scientific Database"]
+  }
+  Generation Agents [icon: file-plus, label: "Phase 4 Agents"] {
+    Validation Parameter Agent [icon: clipboard, label: "GPT-5         ICH Q2R2 Complete"]
+    Protocol Generation Agent [icon: file-text, label: "GPT-5  Document Creation"]
+    Compliance Validation Agent [icon: shield-check, label: "GPT-4o  Regulatory Check"]
+    Equipment Constraint Agent [icon: cpu, label: "GPT-5          Lab Capabilities"]
+  }
+  Learning Agents [icon: user-cog, label: "Phase 5 Agents"] {
+    Edit Capture Agent [icon: edit-3, label: "GPT-4o Feedback Processing"]
+    Pattern Learning Agent [icon: trending-up, label: "GPT-5 Knowledge Evolution"]
+    Quality Assessment Agent [icon: thumbs-up, label: "GPT-4o Performance Analysis"]
+  }
+}
+
+// 5. Advanced RAG System
+Advanced RAG System [label: "5. Advanced RAG System", icon: database, color: purple] {
+  Multi-Level RAG [icon: layers, label: "3-Level Hierarchy"] {
+    Level 1 Classification [icon: filter, label: "Document/Method Classification"]
+    Level 2 Domain [icon: book, label: "Regulatory & SOP Retrieval"]
+    Level 3 Expert [icon: brain, label: "Complex Reasoning & Analysis"]
+  }
+  Knowledge Retrieval [icon: search, label: "Parallel Query System"] {
+    Regulatory Retrieval [icon: file-text, label: "ICH/FDA/USP Guidelines"]
+    Historical Retrieval [icon: activity, label: "Similar Protocol Patterns"]
+    Experience Retrieval [icon: users, label: "Expert Decision Patterns"]
+    Equipment Retrieval [icon: cpu, label: "Lab Constraint Database"]
+  }
+  Vector Search Engine [icon: azure-cognitive-search, label: "Azure AI Search"] {
+    Semantic Search [icon: search, label: "3072-dim Embeddings"]
+    Keyword Search [icon: type, label: "BM25 Algorithm"]
+    Metadata Filtering [icon: filter, label: "Multi-dimensional"]
+  }
+}
+
+// 6. Knowledge Management Layer
+Knowledge Management Layer [label: "6. Knowledge Management Layer", icon: database, color: black] {
+  Protocol Knowledge [icon: file, label: "Historical & Templates"] {
+    Protocol Database [icon: book, label: "Validated Protocol Library"]
+    Method Templates [icon: file-text, label: "ICH Q2R2 Structures"]
+    Success Patterns [icon: trending-up, label: "Performance Metrics"]
+    Cross References [icon: link, label: "Protocol-Report Links"]
+  }
+  Regulatory Knowledge [icon: shield, label: "Compliance Standards"] {
+    ICH Guidelines [icon: globe, label: "Q2R2 Requirements"]
+    FDA Guidance [icon: flag, label: "US Regulatory Standards"]
+    USP Standards [icon: book-open, label: "Compendial Methods"]
+    Internal SOPs [icon: settings, label: "Company Standards"]
+  }
+  Experience Knowledge [icon: brain, label: "Institutional Intelligence"] {
+    Decision Patterns [icon: activity, label: "Historical Expert Choices"]
+    Success Correlations [icon: trending-up, label: "Method Optimization"]
+    Scientist Preferences [icon: user, label: "Individual Expertise"]
+    Failure Analysis [icon: alert-circle, label: "Risk Mitigation"]
+  }
+}
+
+// 7. Azure Data Platform
+Azure Data Platform [label: "7. Azure Data Platform", icon: azure, color: blue, colorMode: bold] {
+  Knowledge Storage [icon: database] {
+    Azure Cosmos DB [icon: azure-cosmos-db, label: "Multi-Modal Knowledge Graph"]
+    Azure SQL Database [icon: azure-sql-database, label: "Structured Analytics Data"]
+  }
+  Document Storage [icon: folder] {
+    Azure Blob Storage [icon: azure-blob-storage, label: "Protocol Archive"]
+    Azure Data Lake [icon: azure-data-lake, label: "Analytics & Metrics"]
+  }
+  Processing Platform [icon: settings] {
+    Azure Functions [icon: zap, label: "Serverless Agent Runtime"]
+    Azure Container Apps [icon: box, label: "Scalable Agent Hosting"]
+    Azure Event Grid [icon: shuffle, label: "Workflow Coordination"]
+  }
+}
+
+// 8. Document Generation System
+Document Generation System [label: "8. Document Generation System", icon: file-text, color: orange, colorMode: bold] {
+  Template Engine [icon: layout, label: "Professional Formatting"] {
+    ICH Structure [icon: shield-check, label: "Q2R2 Compliant Format"]
+    Company Branding [icon: briefcase, label: "Corporate Templates"]
+    Version Control [icon: git-branch, label: "Change Tracking"]
+  }
+  Export Pipeline [icon: upload, label: "Multi-format Output"] {
+    Word Generation [icon: file-text, label: "Professional Documents"]
+    PDF Creation [icon: file, label: "Submission Ready"]
+    SharePoint Sync [icon: sharepoint, label: "Collaboration Platform"]
+  }
+  Quality Assurance [icon: check-circle, label: "Document Validation"] {
+    Compliance Check [icon: shield, label: "Regulatory Verification"]
+    Cross Reference [icon: link, label: "Internal Consistency"]
+    Audit Trail [icon: file-search, label: "Complete Traceability"]
+  }
+}
+
+// 9. ICH Q2R2 Parameter Engine
+ICH Q2R2 Parameter Engine [label: "9. ICH Q2R2 Parameter Engine", icon: clipboard, colorMode: bold, color: red] {
+  Core Parameters [icon: target, label: "Primary Validation"] {
+    System Suitability [icon: settings, label: "RSD ≤2%, Recovery 97-103%"]
+    Specificity [icon: crosshair, label: "Interference ≤2%, Peak Purity"]
+    Linearity [icon: trending-up, label: "R² ≥0.999, 5-point minimum"]
+    Accuracy [icon: bullseye, label: "Recovery 90-110%, RSD ≤5%"]
+  }
+  Advanced Parameters [icon: layers, label: "Extended Validation"] {
+    Precision [icon: repeat, label: "Phase-specific RSD limits"]
+    Detection Limits [icon: eye, label: "DL S/N ≥3, QL S/N ≥10"]
+    Robustness [icon: shield, label: "5-factor DoE design"]
+    Solution Stability [icon: clock, label: "97-103% recovery validation"]
+  }
+  Method Specific [icon: cpu, label: "Technique Optimization"] {
+    HPLC Parameters [icon: activity, label: "Chromatographic Validation"]
+    Dissolution Testing [icon: droplet, label: "Release Profile Analysis"]
+    Filter Studies [icon: filter, label: "Filtration Validation"]
+  }
+}
+
+// 10. Final Protocol Output
+Final Protocol Output [label: "10. Complete Validation Protocol", icon: file-check] {
+  Protocol Document [icon: file-text, label: "PRO-XXXXX v1.0"]
+  Regulatory Compliance [icon: shield-check, label: "ICH Q2R2 Compliant"]
+  Complete Coverage [icon: check-square, label: "All 10 Parameters"]
+  Report Integration [icon: link, label: "Report-generation Ready"]
+  Audit Documentation [icon: file-search, label: "FDA Submission Ready"]
+}
+
+// ================== CONNECTIONS ==================
+
+// Primary Architecture Flow
+User Interface > API Gateway & Orchestration
+API Gateway & Orchestration > Agentic Workflow Engine
+Agentic Workflow Engine > Specialized AI Agents
+Specialized AI Agents <> Advanced RAG System
+Advanced RAG System <> Knowledge Management Layer
+Knowledge Management Layer <> Azure Data Platform
+
+// Document Generation & Delivery Flow
+Specialized AI Agents <> Document Generation System
+Document Generation System > ICH Q2R2 Parameter Engine
+ICH Q2R2 Parameter Engine > Final Protocol Output
+Final Protocol Output > API Gateway & Orchestration
+API Gateway & Orchestration > User Interface
+
+// Human-in-the-Loop Learning & Feedback Loop
+User Interface > API Gateway & Orchestration
+API Gateway & Orchestration > Specialized AI Agents
+Specialized AI Agents <> Knowledge Management Layer
+
+// Critical Bidirectional Learning Flow
+User Interface <> Specialized AI Agents 

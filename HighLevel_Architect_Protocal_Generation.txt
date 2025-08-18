@@ -1,0 +1,90 @@
+direction right
+colorMode pastel
+styleMode shadow
+typeface clean
+
+// =========================================
+// Protocol Development Architecture - High Level (Azure AI, GPT-5)
+// =========================================
+title Protocol Development Architecture - High Level (Azure AI, GPT-5)
+
+// User Interface
+User-Interface [label: "User Interface", icon: monitor, color: blue] {
+  Product-Specs-Input [icon: edit, label: "Product Specs & Method Input"]
+  Scientist-Review [icon: user-check, label: "Human Review & Feedback"]
+}
+
+// API & Orchestration
+API-Orchestration [label: "API Gateway & Orchestration", icon: azure-api-management, color: red] {
+  Master-Orchestrator [icon: aws-backint-agent, label: "Azure AI Foundry"]
+  Workflow-Coordination [icon: calendar, label: "Dynamic Agent Routing"]
+}
+
+// Core Workflow Engine
+Workflow-Engine [label: "Multi-Step Agentic Workflow", icon: workflow] {
+  Data-Foundation [icon: settings, label: "Data Foundation"]
+  Intelligent-Routing [icon: filter, label: "Intelligent Classification"]
+  Experience-Application [icon: brain, label: "Experience Intelligence"]
+  Document-Creation [icon: file-plus, label: "Protocol Generation"]
+  Learning-Integration [icon: user-cog, label: "HITL Learning"]
+}
+
+// AI Agents
+AI-Agents [label: "Specialized AI Agents", icon: bot, color: green] {
+  Foundation-Agents [icon: settings, label: "Data Processing Agents (GPT-4o/5)"]
+  Intelligence-Agents [icon: brain, label: "Experience & Classification Agents (GPT-4o)"]
+  Generation-Agents [icon: file-plus, label: "Protocol Generation Agents (GPT-5)"]
+  Learning-Agents [icon: user-cog, label: "Learning & Quality Agents (GPT-4o/5)"]
+}
+
+// Knowledge & RAG
+Knowledge-System [label: "Advanced RAG & Knowledge", icon: database, color: purple] {
+  RAG-System [icon: search, label: "3-Level RAG Hierarchy"]
+  Knowledge-Base [icon: book, label: "Protocols, Regulations & Experience"]
+  Vector-Search [icon: azure-cognitive-search, label: "Azure AI Search"]
+}
+
+// Azure Infrastructure
+Azure-Platform [label: "Azure Data Platform", icon: azure, color: blue, colorMode: bold] {
+  Data-Storage [icon: database, label: "Cosmos DB & SQL Database"]
+  Document-Storage [icon: folder, label: "Blob Storage & Data Lake"]
+  Processing [icon: settings, label: "Functions & Container Apps"]
+}
+
+// Document Generation
+Document-System [label: "Document Generation", icon: file-text, color: orange, colorMode: bold] {
+  Template-Engine [icon: layout, label: "ICH Q2R2 Compliant Templates"]
+  Export-Pipeline [icon: upload, label: "Structured Formatting"]
+  Quality-Assurance [icon: check-circle, label: "Regulatory Compliance"]
+}
+
+// ICH Parameter Engine
+ICH-Parameter-Engine [label: "ICH Q2R2 Parameter Engine", icon: clipboard, colorMode: bold, color: red] {
+  Core-Parameters [icon: target, label: "System Suitability, Specificity, Linearity"]
+  Advanced-Parameters [icon: layers, label: "Precision, Detection Limits, Robustness"]
+  Method-Specific [icon: cpu, label: "HPLC, Dissolution, Filter Studies"]
+}
+
+// Final Output
+Protocol-Final-Output [label: "Complete Validation Protocol", icon: file-check] {
+  Validation-Protocol [icon: file-text, label: "PRO-XXXXX v1.0 - FDA Ready"]
+}
+
+// ================== CONNECTIONS ==================
+
+// Primary Flow
+User-Interface > API-Orchestration
+API-Orchestration > Workflow-Engine
+Workflow-Engine > AI-Agents
+AI-Agents <> Knowledge-System
+Knowledge-System <> Azure-Platform
+
+// Document Generation Flow
+AI-Agents <> Document-System
+Document-System > ICH-Parameter-Engine
+ICH-Parameter-Engine > Protocol-Final-Output
+Protocol-Final-Output > API-Orchestration
+API-Orchestration > User-Interface
+
+// Learning & Feedback
+AI-Agents <> Knowledge-System

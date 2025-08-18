@@ -1,0 +1,90 @@
+direction right
+colorMode pastel
+styleMode shadow
+typeface clean
+
+// =========================================
+// Report Generation Architecture - High Level (Azure AI, GPT-5)
+// =========================================
+title Report Generation Architecture - High Level (Azure AI, GPT-5)
+
+// User Interface
+Report-User-Interface [label: "User Interface", icon: monitor, color: blue] {
+  Lab-Results-Input [icon: upload, label: "Lab Results & Protocol Input"]
+  Scientist-Review [icon: user-check, label: "Human Review & Feedback"]
+}
+
+// API & Orchestration
+Report-API-Orchestration [label: "API Gateway & Orchestration", icon: azure-api-management, color: red] {
+  Master-Orchestrator [icon: aws-backint-agent, label: "Azure AI Foundry"]
+  Workflow-Coordination [icon: calendar, label: "Dynamic Agent Routing"]
+}
+
+// Core Workflow Engine
+Report-Workflow-Engine [label: "Multi-Step Agentic Workflow", icon: workflow] {
+  Data-Ingestion [icon: database, label: "Data Foundation"]
+  Statistical-Analysis [icon: calculator, label: "Mathematical Processing"]
+  Visualization [icon: bar-chart, label: "Data Presentation"]
+  Document-Creation [icon: file-text, label: "Report Generation"]
+  Learning-Integration [icon: user-cog, label: "HITL Learning"]
+}
+
+// AI Agents
+Report-AI-Agents [label: "Specialized AI Agents", icon: bot, color: green] {
+  Data-Agents [icon: database, label: "Data Processing Agents (GPT-4o/5)"]
+  Analysis-Agents [icon: calculator, label: "Statistical Analysis Agents (GPT-5)"]
+  Visualization-Agents [icon: bar-chart, label: "Chart & Table Generators (GPT-4o)"]
+  Report-Agents [icon: file-text, label: "Document Generation Agents (GPT-5)"]
+}
+
+// Knowledge & RAG
+Report-Knowledge-System [label: "Advanced RAG & Knowledge", icon: database, color: purple] {
+  RAG-System [icon: search, label: "3-Level RAG Hierarchy"]
+  Knowledge-Base [icon: book, label: "Reports, Protocols & Standards"]
+  Vector-Search [icon: azure-cognitive-search, label: "Azure AI Search"]
+}
+
+// Azure Infrastructure
+Report-Azure-Platform [label: "Azure Data Platform", icon: azure, color: blue, colorMode: bold] {
+  Data-Storage [icon: database, label: "Cosmos DB & SQL Database"]
+  Document-Storage [icon: folder, label: "Blob Storage & Data Lake"]
+  Processing [icon: settings, label: "Functions & Container Apps"]
+}
+
+// Document Generation
+Report-Document-System [label: "Document Generation", icon: file-text, color: orange, colorMode: bold] {
+  Template-Engine [icon: layout, label: "ICH Compliant Templates"]
+  Export-Pipeline [icon: upload, label: "Structured Formatting"]
+  Quality-Assurance [icon: check-circle, label: "Regulatory Compliance"]
+}
+
+// Statistical Engine
+Report-Statistical-Engine [label: "Statistical Analysis Engine", icon: calculator, colorMode: bold, color: red] {
+  Core-Statistics [icon: trending-up, label: "RSD, Recovery, Linearity"]
+  ICH-Parameters [icon: clipboard, label: "ICH Q2R2 Validation"]
+  Advanced-Analysis [icon: brain, label: "ANOVA, DoE, Trend Analysis"]
+}
+
+// Final Output
+Report-Final-Output [label: "Complete Validation Report", icon: file-check] {
+  Validation-Report [icon: file-text, label: "RPT-XXXXX v1.0 - FDA Ready"]
+}
+
+// ================== CONNECTIONS ==================
+
+// Primary Flow
+Report-User-Interface > Report-API-Orchestration
+Report-API-Orchestration > Report-Workflow-Engine
+Report-Workflow-Engine > Report-AI-Agents
+Report-AI-Agents <> Report-Knowledge-System
+Report-Knowledge-System <> Report-Azure-Platform
+
+// Document Generation Flow
+Report-AI-Agents <> Report-Document-System
+Report-Document-System > Report-Statistical-Engine
+Report-Statistical-Engine > Report-Final-Output
+Report-Final-Output > Report-API-Orchestration
+Report-API-Orchestration > Report-User-Interface
+
+// Learning & Feedback
+Report-AI-Agents <> Report-Knowledge-System

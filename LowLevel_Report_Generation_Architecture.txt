@@ -1,0 +1,220 @@
+direction right
+colorMode pastel
+styleMode shadow
+typeface clean
+
+// x=========================================
+// Report Development Architecture (Azure AI, GPT-5)
+// =========================================
+title Report Development Architecture (Azure AI, GPT-5)
+
+// 1. Report User Interface Layer
+1-Report-User-Interface [label: "1. User Interface Layer", icon: monitor, color: blue] {
+  1-1-Report-Web-Application [icon: react, label: "React + Azure App Service"]
+  1-2-Results-Input [icon: upload, label: "Lab Results Upload"]
+  1-3-Protocol-Reference [icon: file-text, label: "Original Protocol Link"]
+  1-4-Report-Data-Parser [icon: file-spreadsheet, label: "Excel/Chromatogram Parser"]
+  1-5-Deviation-Notes [icon: edit-3, label: "Execution Changes Input"]
+  1-6-Report-Scientist-Review [icon: user-check, label: "HITL Review Interface"]
+}
+
+// 2. Report API Gateway & Orchestration
+2-Report-API-Gateway [label: "2. API Gateway & Orchestration", icon: azure-api-management, color: red] {
+  2-1-Report-API-Management [icon: azure-api-management, label: "Authentication & Rate Limiting"]
+  2-2-Report-Master-Orchestrator [icon: aws-backint-agent, label: "Master Orchestrator"]
+  2-3-Report-Workflow-Engine [icon: calendar, label: "12-Step Report Workflow"]
+  2-4-Report-Agent-Coordinator [icon: users, label: "Dynamic Agent Routing"]
+}
+
+// 3. 12-Step Report Workflow Engine
+3-Report-Workflow-Engine [label: "3. Multi-Step Agentic Report Workflow Engine", icon: workflow] {
+  3-1-Report-Phase-1-Data-Foundation [icon: database, label: "Steps 1-3: Data Ingestion"] {
+    3-1-1-Results-Parsing [icon: upload, label: "Lab Results Data Parsing"]
+    3-1-2-Protocol-Reference [icon: link, label: "Original Protocol Extraction"]
+    3-1-3-Report-Data-Validation [icon: check-circle, label: "Quality Control Validation"]
+  }
+  3-2-Report-Phase-2-Statistical-Analysis [icon: calculator, label: "Steps 4-6: Mathematical Processing"] {
+    3-2-1-Statistical-Calculations [icon: trending-up, label: "RSD, Recovery, R² Analysis"]
+    3-2-2-Parameter-Validation [icon: clipboard, label: "ICH Q2R2 Assessment"]
+    3-2-3-Pass-Fail-Determination [icon: check-square, label: "Acceptance Criteria Comparison"]
+  }
+  3-3-Report-Phase-3-Visualization [icon: bar-chart, label: "Steps 7-9: Data Presentation"] {
+    3-3-1-Chart-Generation [icon: pie-chart, label: "Professional Visualizations"]
+    3-3-2-Table-Creation [icon: table, label: "Statistical Summary Tables"]
+    3-3-3-Figure-Assembly [icon: image, label: "Regulatory-Compliant Figures"]
+  }
+  3-4-Report-Phase-4-Generation [icon: file-text, label: "Steps 10-12: Document Creation"] {
+    3-4-1-Content-Generation [icon: file-plus, label: "Complete Report Writing"]
+    3-4-2-Compliance-Validation [icon: shield-check, label: "Regulatory Verification"]
+    3-4-3-Traceability-Linking [icon: link, label: "Protocol-Report Connection"]
+  }
+
+  3-5-Report-Phase-5-Learning [icon: user-cog, label: "Steps 13-15: HITL Integration"] {
+      Review Capture [icon: edit-3, label: "Scientist Feedback"]
+      Pattern Learning [icon: brain, label: "Knowledge Update"]
+      Quality Optimization [icon: thumbs-up, label: "Continuous Improvement"]
+    }
+
+}
+
+// 4. Report AI Agents
+4-Report-AI-Agents [label: "4. Specialized AI Agents", icon: bot, color: green] {
+  4-1-Report-AzureOpenAI [icon: azure-ai, label: "Azure Foundry"]
+  4-2-Data-Processing-Agents [icon: database, label: "Phase 1 Agents"] {
+    4-2-1-Results-Data-Analysis-Agent [icon: upload, label: "GPT-4o Multi-format Parser"]
+    4-2-2-Protocol-Reference-Agent [icon: openai, label: "GPT-5 CRITICAL DRIVER"]
+    4-2-3-Report-Data-Validation-Agent [icon: check-circle, label: "GPT-4o Quality Control"]
+  }
+  4-3-Statistical-Analysis-Agents [icon: calculator, label: "Phase 2 Agents"] {
+    4-3-1-Statistical-Calculation-Agent [icon: trending-up, label: "GPT-5         Mathematical Engine"]
+    4-3-2-Report-Validation-Parameter-Agent [icon: clipboard, label: "GPT-5  ICH Q2R2 Complete"]
+    4-3-3-Mathematical-Modeling-Agent [icon: activity, label: "GPT-4o  Advanced Calculations"]
+  }
+  4-4-Visualization-Agents [icon: bar-chart, label: "Phase 3 Agents"] {
+    4-4-1-Data-Visualization-Generator [icon: pie-chart, label: "GPT-4o Chart Generation"]
+    4-4-2-Figure-Generation-Agent [icon: image, label: "GPT-4o Scientific Figures"]
+    4-4-3-Table-Generation-Agent [icon: table, label: "GPT-4o          Statistical Tables"]
+  }
+  4-5-Report-Generation-Agents [icon: file-text, label: "Phase 4 Agents"] {
+    4-5-1-Conclusion-Comparison-Agent [icon: check-square, label: "GPT-5  Pass/Fail Analysis"]
+    4-5-2-Report-Content-Generation-Agent [icon: file-plus, label: "GPT-5 Document Creation"]
+    4-5-3-Report-Compliance-Agent [icon: shield-check, label: "GPT-4o  Compliance Check"]
+    4-5-4-Deviation-Tracking-Agent [icon: edit-3, label: "GPT-4o Change Documentation"]
+    4-5-5-Report-Traceability-Agent [icon: link, label: "GPT-4o        Cross-Reference"]
+  }
+}
+
+// 5. Report RAG System
+5-Report-RAG-System [label: "5. Advanced RAG System", icon: database, color: purple] {
+  5-1-Report-Multi-Level-RAG [icon: layers, label: "3-Level Hierarchy"] {
+    5-1-1-Report-Level-1-Classification [icon: filter, label: "Data Type Classification"]
+    5-1-2-Report-Level-2-Analysis [icon: search, label: "Statistical Method Retrieval"]
+    5-1-3-Report-Level-3-Expert [icon: brain, label: "Complex Report Reasoning"]
+  }
+  5-2-Report-Knowledge-Retrieval [icon: search, label: "Parallel Query System"] {
+    5-2-1-Protocol-Retrieval [icon: file-text, label: "Original Protocol Analysis"]
+    5-2-2-Statistical-Retrieval [icon: calculator, label: "Calculation Methods"]
+    5-2-3-Historical-Retrieval [icon: activity, label: "Similar Report Patterns"]
+    5-2-4-Regulatory-Retrieval [icon: shield, label: "Compliance Standards"]
+  }
+  5-3-Report-Vector-Search-Engine [icon: azure-cognitive-search, label: "Azure AI Search"] {
+    5-3-1-Report-Semantic-Search [icon: search, label: "3072-dim Embeddings"]
+    5-3-2-Report-Keyword-Search [icon: type, label: "BM25 Algorithm"]
+    5-3-3-Report-Metadata-Filtering [icon: filter, label: "Multi-dimensional"]
+  }
+}
+
+// 6. Report Knowledge Management
+6-Report-Knowledge-Management [label: "6. Knowledge Management Layer", icon: database, color: black] {
+  6-1-Report-Knowledge [icon: file-check, label: "Historical Reports"] {
+    6-1-1-Report-Database [icon: book, label: "Validation Report Library"]
+    6-1-2-Statistical-Patterns [icon: trending-up, label: "Analysis Templates"]
+    6-1-3-Pass-Fail-Trends [icon: check-square, label: "Success Patterns"]
+    6-1-4-Quality-Benchmarks [icon: target, label: "Performance Metrics"]
+  }
+  6-2-Protocol-Reference-Knowledge [icon: file-text, label: "Reference Protocols"] {
+    6-2-1-Protocol-Database [icon: book-open, label: "Original Protocol Library"]
+    6-2-2-Acceptance-Criteria [icon: clipboard, label: "Criteria Database"]
+    6-2-3-Cross-References [icon: link, label: "Protocol-Report Links"]
+    6-2-4-Version-Control [icon: git-branch, label: "Document Tracking"]
+  }
+  6-3-Statistical-Knowledge [icon: calculator, label: "Mathematical Methods"] {
+    6-3-1-Calculation-Library [icon: activity, label: "Statistical Procedures"]
+    6-3-2-ICH-Requirements [icon: shield-check, label: "Q2R2 Standards"]
+    6-3-3-Validation-Methods [icon: check-circle, label: "Assessment Algorithms"]
+    6-3-4-Quality-Standards [icon: award, label: "Performance Criteria"]
+  }
+}
+
+// 7. Report Data Platform
+7-Report-Data-Platform [label: "7. Azure Data Platform", icon: azure, color: blue, colorMode: bold] {
+  7-1-Knowledge-Storage [label: "Knowledge Storage",icon: database] {
+    7-1-1-Report-Cosmos-DB [icon: azure-cosmos-db, label: "Multi-Modal Knowledge Graph"]
+    7-1-2-Report-SQL-Database [icon: azure-sql-database, label: "Structured Analytics Data"]
+  }
+  7-2-Document-Storage [label: "Document Storage",icon: folder] {
+    7-2-1-Report-Blob-Storage [icon: azure-blob-storage, label: "Report Archive"]
+    7-2-2-Report-Data-Lake [icon: azure-data-lake, label: "Analytics & Metrics"]
+  }
+  7-3-Processing-Platform [label: "Processing Platform",icon: settings] {
+    7-3-1-Report-Functions [icon: zap, label: "Serverless Agent Runtime"]
+    7-3-2-Report-Container-Apps [icon: box, label: "Scalable Agent Hosting"]
+    7-3-3-Report-Event-Grid [icon: shuffle, label: "Workflow Coordination"]
+  }
+}
+
+// 8. Report Document Generation
+8-Report-Document-Generation [label: "8. Document Generation System", icon: file-text, color: orange, colorMode: bold] {
+  8-1-Report-Template-Engine [icon: layout, label: "Professional Formatting"] {
+    8-1-1-Report-Structure [icon: file-check, label: "ICH Compliant Format"]
+    8-1-2-Report-Company-Branding [icon: briefcase, label: "Corporate Templates"]
+    8-1-3-Report-Version-Control [icon: git-branch, label: "Change Tracking"]
+  }
+  8-2-Report-Export-Pipeline [icon: upload, label: "Multi-format Output"] {
+    8-2-1-Report-Word-Generation [icon: file-text, label: "Professional Documents"]
+    8-2-2-Report-PDF-Creation [icon: file, label: "Submission Ready"]
+    8-2-3-Report-SharePoint-Sync [icon: sharepoint, label: "Collaboration Platform"]
+  }
+  8-3-Report-Quality-Assurance [icon: check-circle, label: "Document Validation"] {
+    8-3-1-Report-Compliance-Check [icon: shield, label: "Regulatory Verification"]
+    8-3-2-Report-Cross-Reference [icon: link, label: "Internal Consistency"]
+    8-3-3-Report-Audit-Trail [icon: file-search, label: "Complete Traceability"]
+  }
+}
+
+// 9. Report Statistical Analysis Engine
+9-Report-Statistical-Analysis-Engine [label: "9. Statistical Analysis Engine", icon: calculator, colorMode: bold, color: red] {
+  9-1-Report-Core-Calculations [icon: trending-up, label: "Primary Statistics"] {
+    9-1-1-Report-RSD-Analysis [icon: activity, label: "Relative Standard Deviation"]
+    9-1-2-Report-Recovery-Calculations [icon: percent, label: "Recovery Percentages"]
+    9-1-3-Report-Linearity-Assessment [icon: trending-up, label: "R², Slope, Y-intercept"]
+    9-1-4-Report-Confidence-Intervals [icon: target, label: "Statistical Confidence"]
+  }
+  9-2-Report-ICH-Parameters [icon: clipboard, label: "Validation Assessment"] {
+    9-2-1-Report-System-Suitability [icon: settings, label: "Performance Verification"]
+    9-2-2-Report-Specificity [icon: crosshair, label: "Interference Assessment"]
+    9-2-3-Report-Precision [icon: repeat, label: "Repeatability Analysis"]
+    9-2-4-Report-Accuracy [icon: bullseye, label: "Recovery Validation"]
+  }
+  9-3-Report-Advanced-Analysis [icon: brain, label: "Complex Statistics"] {
+    9-3-1-Report-ANOVA-Testing [icon: bar-chart, label: "Analysis of Variance"]
+    9-3-2-Report-Signal-Noise-Ratios [icon: radio, label: "Detection Limits"]
+    9-3-3-Report-Robustness-Analysis [icon: shield, label: "DoE Assessment"]
+    9-3-4-Report-Trend-Analysis [icon: trending-up, label: "Stability Evaluation"]
+  }
+}
+
+// 10. Final Report Output
+10-Final-Report-Output [label: "10. Complete Validation Report", icon: file-check] {
+  10-1-Report-Document [icon: file-text, label: "RPT-XXXXX v1.0"]
+  10-2-Report-Statistical-Analysis [icon: calculator, label: "Complete Mathematical Assessment"]
+  10-3-Report-Pass-Fail-Results [icon: check-square, label: "All Parameters Evaluated"]
+  10-4-Report-Protocol-Traceability [icon: link, label: "Original Protocol Linked"]
+  10-5-Report-Regulatory-Compliance [icon: shield-check, label: "ICH Q2R2 Compliant"]
+  10-6-Report-Audit-Documentation [icon: file-search, label: "FDA Submission Ready"]
+}
+
+// ================== CONNECTIONS ==================
+
+// Primary Architecture Flow
+1-Report-User-Interface > 2-Report-API-Gateway
+2-Report-API-Gateway > 3-Report-Workflow-Engine
+3-Report-Workflow-Engine > 4-Report-AI-Agents
+4-Report-AI-Agents <> 5-Report-RAG-System
+5-Report-RAG-System <> 6-Report-Knowledge-Management
+6-Report-Knowledge-Management <> 7-Report-Data-Platform
+
+// Document Generation & Delivery Flow
+4-Report-AI-Agents <> 8-Report-Document-Generation
+8-Report-Document-Generation > 9-Report-Statistical-Analysis-Engine
+9-Report-Statistical-Analysis-Engine > 10-Final-Report-Output
+10-Final-Report-Output > 2-Report-API-Gateway
+2-Report-API-Gateway > 1-Report-User-Interface
+
+// Human-in-the-Loop Learning & Feedback Loop
+1-Report-User-Interface > 2-Report-API-Gateway
+2-Report-API-Gateway > 4-Report-AI-Agents
+4-Report-AI-Agents <> 6-Report-Knowledge-Management
+
+// Critical Bidirectional Learning Flow
+1-Report-User-Interface <> 4-Report-AI-Agents
